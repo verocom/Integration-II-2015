@@ -1,0 +1,39 @@
+/* 
+    Created on : 29-Jan-2015, 12:02:18 PM
+    Author     : Carl-Hugo
+*/
+
+@toto: 12px;
+@tata: 10px;
+@titi: @toto + @tata;
+@gutter: 30px;
+
+@gris-moyen: lighten(#000, 60%);
+
+@border: 1px solid @gris-moyen;
+
+
+// body magique
+body {
+    margin:0;
+    padding:0;
+    background: #efefef;
+}
+
+.titi {
+    width: @titi;
+    margin-left: @gutter / 2;
+    margin-right: @gutter / 2;
+    border-left: @border;
+    border-right: @border;
+}
+
+.testCouleur {
+    color: #000;
+    color: lighten(#000, 20%);
+    color: lighten(#000, 40%);
+    color: lighten(#000, 60%);
+    color: lighten(#000, 80%);
+    color: lighten(#000, 100%);
+    //92, 146, 255 | 45, 208, 49
+}

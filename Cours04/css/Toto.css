@@ -1,0 +1,25 @@
+/* 
+    Created on : 29-Jan-2015, 12:02:18 PM
+    Author     : Carl-Hugo
+*/
+body {
+  margin: 0;
+  padding: 0;
+  background: #efefef;
+}
+.titi {
+  width: 22px;
+  margin-left: 15px;
+  margin-right: 15px;
+  border-left: 1px solid #999999;
+  border-right: 1px solid #999999;
+}
+.testCouleur {
+  color: #000;
+  color: #333333;
+  color: #666666;
+  color: #999999;
+  color: #cccccc;
+  color: #ffffff;
+}
+/*# sourceMappingURL=Toto.css.map */

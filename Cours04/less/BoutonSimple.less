@@ -32,43 +32,29 @@
     }
 }
 
-.btn-bleu {
-    color: @couleur-bleu;
-    border: @border-width solid @couleur-bleu;
+.btn-color-border(@couleur){
+    color: @couleur;
+    border: @border-width solid @couleur;
+}
+
+.btn-generate(@couleur, @couleur-hover){
+    .btn-color-border(@couleur);
     
     &:hover,
     &:focus {
-        color: @couleur-bleu-hover;
-        border: @border-width solid @couleur-bleu-hover;
+        .btn-color-border(@couleur-hover);
     }
+}
+
+.btn-bleu {
+    .btn-generate(@couleur-bleu, @couleur-bleu-hover);
 }
 .btn-rouge {
-    color: @couleur-rouge;
-    border: @border-width solid @couleur-rouge;
-    
-    &:hover,
-    &:focus {
-        color: @couleur-rouge-hover;
-        border: @border-width solid @couleur-rouge-hover;
-    }
+    .btn-generate(@couleur-rouge, @couleur-rouge-hover);
 }
 .btn-vert {
-    color: @couleur-vert;
-    border: @border-width solid @couleur-vert;
-    
-    &:hover,
-    &:focus {
-        color: @couleur-vert-hover;
-        border: @border-width solid @couleur-vert-hover;
-    }
+    .btn-generate(@couleur-vert, @couleur-vert-hover);
 }
 .btn-jaune {
-    color: @couleur-jaune;
-    border: @border-width solid @couleur-jaune;
-    
-    &:hover,
-    &:focus {
-        color: @couleur-jaune-hover;
-        border: @border-width solid @couleur-jaune-hover;
-    }
+    .btn-generate(@couleur-jaune, @couleur-jaune-hover);
 }

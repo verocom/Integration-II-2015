@@ -1,0 +1,107 @@
+@couleur-bleu:#5c92ff;
+@couleur-rouge: #ff5e5e;
+@couleur-vert: #2dd031;
+@couleur-jaune: #a19f01;
+
+@couleur-bleu-hover: #2b5abb;
+@couleur-rouge-hover: #bc2c2c;
+@couleur-vert-hover: #029205;
+@couleur-jaune-hover: #636101;
+
+@padding-h: 38px;
+@padding-v: 21px;
+
+@border-width: 3px;
+@bordered-padding-h: @padding-h - @border-width;
+@bordered-padding-v: @padding-v - @border-width;
+
+.btn-bleu, 
+.btn-rouge, 
+.btn-vert, 
+.btn-jaune {
+    padding: @bordered-padding-v @bordered-padding-h;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    display: inline-block;
+    line-height: 18px;
+    
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        outline: none;
+    }
+}
+
+.btn-color-border(@couleur){
+    color: @couleur;
+    border: @border-width solid @couleur;
+}
+
+.btn-generate(@couleur, @couleur-hover){
+    .btn-color-border(@couleur);
+    
+    &:hover,
+    &:focus {
+        .btn-color-border(@couleur-hover);
+    }
+}
+
+.btn-bleu {
+    .btn-generate(@couleur-bleu, @couleur-bleu-hover);
+}
+.btn-rouge {
+    .btn-generate(@couleur-rouge, @couleur-rouge-hover);
+}
+.btn-vert {
+    .btn-generate(@couleur-vert, @couleur-vert-hover);
+}
+.btn-jaune {
+    .btn-generate(@couleur-jaune, @couleur-jaune-hover);
+}
+
+
+//
+// Flat
+//
+@color-flat: #FFF;
+
+.btn-bleu-flat, 
+.btn-rouge-flat, 
+.btn-vert-flat, 
+.btn-jaune-flat {
+    padding: @padding-v @padding-h;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    display: inline-block;
+    line-height: 18px;
+    
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        outline: none;
+    }
+}
+
+.btn-flat-generate(@couleur, @couleur-hover){
+    color: @color-flat;
+    background-color: @couleur;
+    
+    &:hover,
+    &:focus {
+        color: @color-flat;
+        background-color: @couleur-hover;
+    }
+}
+
+.btn-bleu-flat {
+    .btn-flat-generate(@couleur-bleu, @couleur-bleu-hover);
+}
+.btn-rouge-flat {
+    .btn-flat-generate(@couleur-rouge, @couleur-rouge-hover);
+}
+.btn-vert-flat {
+    .btn-flat-generate(@couleur-vert, @couleur-vert-hover);
+}
+.btn-jaune-flat {
+    .btn-flat-generate(@couleur-jaune, @couleur-jaune-hover);
+}

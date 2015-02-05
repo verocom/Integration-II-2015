@@ -1,3 +1,17 @@
+.toto {
+  padding: 15px 25px;
+  color: #666666;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  display: inline-block;
+  line-height: 18px;
+}
+.toto:hover,
+.toto:focus {
+  text-decoration: none;
+  outline: none;
+  color: #999999;
+}
 .btn-bleu {
   padding: 18px 35px;
   color: #5c92ff;

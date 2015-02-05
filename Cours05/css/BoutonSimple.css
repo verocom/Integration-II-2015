@@ -25,7 +25,7 @@
 }
 .btn-bleu:hover,
 .btn-bleu:focus {
-  color: #2b5abb;
+  color: #5c92ff;
   border: 3px solid #2b5abb;
 }
 .btn-rouge {
@@ -34,7 +34,7 @@
 }
 .btn-rouge:hover,
 .btn-rouge:focus {
-  color: #bc2c2c;
+  color: #ff5e5e;
   border: 3px solid #bc2c2c;
 }
 .btn-vert {
@@ -43,7 +43,7 @@
 }
 .btn-vert:hover,
 .btn-vert:focus {
-  color: #029205;
+  color: #2dd031;
   border: 3px solid #029205;
 }
 .btn-jaune {
@@ -52,7 +52,7 @@
 }
 .btn-jaune:hover,
 .btn-jaune:focus {
-  color: #636101;
+  color: #a19f01;
   border: 3px solid #636101;
 }
 .btn-bleu-flat,

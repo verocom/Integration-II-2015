@@ -1,0 +1,115 @@
+.btn-bleu,
+.btn-rouge,
+.btn-vert,
+.btn-jaune {
+  padding: 18px 35px;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  display: inline-block;
+  line-height: 18px;
+}
+.btn-bleu:hover,
+.btn-rouge:hover,
+.btn-vert:hover,
+.btn-jaune:hover,
+.btn-bleu:focus,
+.btn-rouge:focus,
+.btn-vert:focus,
+.btn-jaune:focus {
+  text-decoration: none;
+  outline: none;
+}
+.btn-bleu-flat,
+.btn-rouge-flat,
+.btn-vert-flat,
+.btn-jaune-flat {
+  padding: 21px 38px;
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  display: inline-block;
+  line-height: 18px;
+}
+.btn-bleu-flat:hover,
+.btn-rouge-flat:hover,
+.btn-vert-flat:hover,
+.btn-jaune-flat:hover,
+.btn-bleu-flat:focus,
+.btn-rouge-flat:focus,
+.btn-vert-flat:focus,
+.btn-jaune-flat:focus {
+  text-decoration: none;
+  outline: none;
+}
+.btn-bleu {
+  color: #5c92ff;
+  border: 3px solid #5c92ff;
+}
+.btn-bleu:hover,
+.btn-bleu:focus {
+  color: #2b5abb;
+  border: 3px solid #2b5abb;
+}
+.btn-rouge {
+  color: #ff5e5e;
+  border: 3px solid #ff5e5e;
+}
+.btn-rouge:hover,
+.btn-rouge:focus {
+  color: #bc2c2c;
+  border: 3px solid #bc2c2c;
+}
+.btn-vert {
+  color: #2dd031;
+  border: 3px solid #2dd031;
+}
+.btn-vert:hover,
+.btn-vert:focus {
+  color: #029205;
+  border: 3px solid #029205;
+}
+.btn-jaune {
+  color: #a19f01;
+  border: 3px solid #a19f01;
+}
+.btn-jaune:hover,
+.btn-jaune:focus {
+  color: #636101;
+  border: 3px solid #636101;
+}
+.btn-bleu-flat {
+  color: #ffffff;
+  background-color: #5c92ff;
+}
+.btn-bleu-flat:hover,
+.btn-bleu-flat:focus {
+  color: #ffffff;
+  background-color: #2b5abb;
+}
+.btn-rouge-flat {
+  color: #ffffff;
+  background-color: #ff5e5e;
+}
+.btn-rouge-flat:hover,
+.btn-rouge-flat:focus {
+  color: #ffffff;
+  background-color: #bc2c2c;
+}
+.btn-vert-flat {
+  color: #ffffff;
+  background-color: #2dd031;
+}
+.btn-vert-flat:hover,
+.btn-vert-flat:focus {
+  color: #ffffff;
+  background-color: #029205;
+}
+.btn-jaune-flat {
+  color: #ffffff;
+  background-color: #a19f01;
+}
+.btn-jaune-flat:hover,
+.btn-jaune-flat:focus {
+  color: #ffffff;
+  background-color: #636101;
+}
+/*# sourceMappingURL=BoutonSimpleWhen.css.map */

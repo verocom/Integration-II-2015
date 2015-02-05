@@ -23,6 +23,10 @@
             <div class="row">
                 <div class="col-sm-6">
                     <h2>flat</h2>
+                    <a href="#" class="btn-bleu-flat">Mon Bouton</a><br><br>
+                    <a href="#" class="btn-rouge-flat">Mon Bouton</a><br><br>
+                    <a href="#" class="btn-vert-flat">Mon Bouton</a><br><br>
+                    <a href="#" class="btn-jaune-flat">Mon Bouton</a><br><br>
                 </div>
                 <div class="col-sm-6">
                     <h2>normal</h2>

@@ -1,13 +1,3 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 29-Jan-2015, 2:19:44 PM
-    Author     : Carl-Hugo
-*/
-
 @couleur-bleu:#5c92ff;
 @couleur-rouge: #ff5e5e;
 @couleur-vert: #2dd031;
@@ -25,31 +15,48 @@ and open the template in the editor.
 @bordered-padding-h: @padding-h - @border-width;
 @bordered-padding-v: @padding-v - @border-width;
 
-.btn(@couleur, @padding-vertical, @padding-horizontal) {
+.btn(@couleur, @couleur-hover, @padding-vertical, @padding-horizontal) {
     padding: @padding-vertical @padding-horizontal;
     color: @couleur;
     font-family: 'Lato', sans-serif;
     font-size: 18px;
     display: inline-block;
     line-height: 18px;
+    
+    &:hover, 
+    &:focus {
+        text-decoration: none;
+        outline: none;
+        color: @couleur-hover;
+    }
+}
+
+.btn-border(@border-color, @border-color-hover){
+    border: @border-width solid @border-color;
+    
+    &:hover,
+    &:focus {
+        border-color: @border-color-hover;
+    }
 }
 
 .btn-bleu {
-    .btn(@couleur-bleu, @bordered-padding-v, @bordered-padding-h);
-    border: @border-width solid @couleur-bleu;
+    //.btn(#5c92ff, 18px, 35px);
+    .btn(@couleur-bleu, @couleur-bleu-hover, @bordered-padding-v, @bordered-padding-h);
+    .btn-border(@couleur-bleu, @couleur-bleu-hover);
 }
 
 .btn-rouge {
-    .btn(@couleur-rouge, @bordered-padding-v, @bordered-padding-h);
-    border: @border-width solid @couleur-rouge;
+    .btn(@couleur-rouge, @couleur-rouge-hover, @bordered-padding-v, @bordered-padding-h);
+    .btn-border(@couleur-rouge, @couleur-rouge-hover);
 }
 
 .btn-vert {
-    .btn(@couleur-vert, @bordered-padding-v, @bordered-padding-h);
-    border: @border-width solid @couleur-vert;
+    .btn(@couleur-vert, @couleur-vert-hover, @bordered-padding-v, @bordered-padding-h);
+    .btn-border(@couleur-vert, @couleur-vert-hover);
 }
 
 .btn-jaune {
-    .btn(@couleur-jaune, @bordered-padding-v, @bordered-padding-h);
-    border: @border-width solid @couleur-jaune;
+    .btn(@couleur-jaune, @couleur-jaune-hover, @bordered-padding-v, @bordered-padding-h);
+    .btn-border(@couleur-jaune, @couleur-jaune-hover);
 }

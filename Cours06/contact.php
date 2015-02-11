@@ -20,10 +20,15 @@
         <![endif]-->
     </head>
     <body>
-
-        <section class="container">
+        <div class="dark">
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+        </div>
+        
+        <section class="container section-principale">
             <div class="row">
-                <header class="col-sm-12">
+                <header class="col-sm-12 section-header">
                     <h2>CONTACT US</h2>
                     <p class="sous-titre">Duis vitae velit mollis, congue nisi dignissim, pellentesque lorem</p>
                 </header>
@@ -55,6 +60,12 @@
             </form>
         </section>
 
+        <div class="dark">
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+        </div>
+        
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="js/jquery-2.1.3.js" type="text/javascript"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->

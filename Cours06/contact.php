@@ -26,7 +26,7 @@
             <p>&nbsp;</p>
         </div>
         
-        <section class="container section-principale">
+        <section class="container section-principale" id="contact">
             <div class="row">
                 <header class="col-sm-12 section-header">
                     <h2>CONTACT US</h2>
@@ -70,5 +70,6 @@
         <script src="js/jquery-2.1.3.js" type="text/javascript"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
+        <script src="js/contact.js" type="text/javascript"></script>
     </body>
 </html>

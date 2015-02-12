@@ -98,6 +98,5 @@ if (isset($_POST["name"], $_POST["email"], $_POST["subject"], $_POST["message"])
         <script src="js/jquery-2.1.3.js" type="text/javascript"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
-        <script src="js/contact.js" type="text/javascript"></script>
     </body>
 </html>

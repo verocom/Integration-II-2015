@@ -9,6 +9,9 @@ contactForm.addEventListener("submit", function(event){
         var el = elements[i];
         if (el.value == ""){
             isValid = false;
+            el.className = "invalide";
+        } else {
+            el.className = "";
         }
     }
     

@@ -1,62 +1,90 @@
+/*
+//
+// Police custom
+//*/
 @font-face {
-  font-family: 'bebas neue';
-  src: url('../fonts/bebasneue_regular-webfont.eot');
-  src: url('../fonts/bebasneue_regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/bebasneue_regular-webfont.woff2') format('woff2'), url('../fonts/bebasneue_regular-webfont.woff') format('woff'), url('../fonts/bebasneue_regular-webfont.ttf') format('truetype'), url('../fonts/bebasneue_regular-webfont.svg#bebas_neue_regularregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'bebas neue';
+    src: url('../fonts/bebasneue_regular-webfont.eot');
+    src: url('../fonts/bebasneue_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bebasneue_regular-webfont.woff2') format('woff2'),
+         url('../fonts/bebasneue_regular-webfont.woff') format('woff'),
+         url('../fonts/bebasneue_regular-webfont.ttf') format('truetype'),
+         url('../fonts/bebasneue_regular-webfont.svg#bebas_neue_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 }
-h2 {
-  font-family: 'bebas neue', sans-serif;
-  font-size: 56px;
-  font-weight: bold;
-  color: #191918;
-  text-align: center;
+/*
+//
+// Styles généraux
+//*/
+h2{
+    font-family: 'bebas neue', sans-serif;
+    font-size: 56px;
+    font-weight: bold;
+    color: #191918;
+    text-align: center;
 }
+
 .sous-titre {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  color: #191918;
-  font-weight: 600;
-  text-align: center;
+     font-family: 'Open Sans', sans-serif;
+     font-size: 16px;
+     color: #191918;
+     font-weight: 600;
+     text-align: center;
 }
+
 .section-header {
-  padding-bottom: 50px;
+    padding-bottom: 50px;
 }
+
 .section-principale {
-  padding-top: 60px;
-  padding-bottom: 80px;
+    padding-top: 60px;
+    padding-bottom: 80px
 }
+
 .dark {
-  background-color: #1b1a18;
+    background-color: #1b1a18;
 }
+/*
+//
+//  FORM
+//*/
 input,
-textarea {
-  width: 100%;
-  background-color: #f6f6f6;
-  border: 1px solid #cccccc;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
-  line-height: 20px;
-  color: #777;
-  padding: 13px 15px;
+textarea{
+    width:100%;
+    background-color: #f6f6f6;
+    border:1px solid #cccccc;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #777;
+    padding: 13px 15px;
 }
-textarea {
-  height: 200px;
+
+textarea{
+    height: 200px;
 }
+
 .contact-form .row {
-  padding-top: 15px;
-  padding-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
+
 .contact-form button {
-  margin: 0 auto;
-  display: block;
-  background-color: #c59a6d;
-  color: #FFF;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 14px;
-  border: 0px none;
-  padding: 18px 40px;
+    margin: 0 auto;
+    display: block;
+    background-color: #c59a6d;
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 14px;
+    border: 0px none;
+    padding: 18px 40px;
 }
-/*# sourceMappingURL=site.css.map */
+
+.invalide {
+    background-color: #FFEFEF;
+    border: 1px solid #900;
+}
+

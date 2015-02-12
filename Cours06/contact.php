@@ -1,3 +1,16 @@
+<?php
+$formValid = false;
+if (isset($_POST["name"], $_POST["email"], $_POST["subject"], $_POST["message"])){
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $subject = $_POST["subject"];
+    $message = $_POST["message"];
+    
+    if ($name != "" && $email != "" && $subject != "" && $message != ""){
+        $formValid = true;
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -33,31 +46,46 @@
                     <p class="sous-titre">Duis vitae velit mollis, congue nisi dignissim, pellentesque lorem</p>
                 </header>
             </div>
-            <form id="contact-form" class="contact-form">
+            <?php 
+            if ($formValid) { ?>
                 <div class="row">
                     <div class="col-sm-6">
-                        <input type="text" name="name" placeholder="YOUR NAME">
+                        <?= $name ?>
                     </div>
                     <div class="col-sm-6">
-                        <input type="email" name="email" placeholder="YOUR EMAIL">
+                        <?= $email ?>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <input type="text" name="subject" placeholder="THE SUBJECT">
+                        <?= $subject ?>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <textarea name="message" placeholder="THE MESSAGE"></textarea>
+                        <?= $message ?>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12">
-                        <button type="submit">SEND THE MESSAGE</button>
+                        <a href="index.php">Retourner à la page d’accueil</a>
+                    </div>
+                </div><?php 
+            } else { ?>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="alert alert-danger">
+                            <h4>Erreur</h4>
+                            <p>Aucune donnée n’a été envoyée.</p>
+                            <p>
+                                <a href="index.php" class="btn btn-default">Retourner à la page d’accueil</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </form>
+                <?php
+            }
+            ?>
         </section>
 
         <div class="dark">

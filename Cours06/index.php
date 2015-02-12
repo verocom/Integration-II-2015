@@ -1,117 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <title>Basic Intégration</title>
-        <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact</title>
+
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+        
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/site.css" rel="stylesheet" type="text/css"/>
+        
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
     </head>
     <body>
-        <a href="index.php#toto">Toto</a>
-        <?php
-        // Si no est définit
-        if (isset($_GET["no"])){
-            // acquisition de la valeur de no
-            $no = $_GET["no"];
-            if ($no == 1){ // si no égale 1
-                echo '<h1>Titre</h1>';
-            } else {
-                echo '<h2>Titre ' . $no . '</h2>';
-            }
-        } else {
-            $no = 1;
-        }
-        ?>
-                
-        <form method="get" action="index.php">
-            <label for="bleh">No: </label>
-            <input type="number" name="no" id="bleh" value="<?= $no ?>">
-            <input type="submit" value="GO">
-        </form>
-        
-        <ul>
-            <li><a href="index.php?no=1">#1</a></li>
-            <li><a href="index.php?no=2">#2</a></li>
-            <li><hr></li>
-            <?php
-            for ($i = 10; $i <= 100; $i += 10){
-                echo '<li><a href="index.php?no='.$i.'">#'.$i.'</a></li>';
-            }
-            ?>
-        </ul>
-
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        
-        <div id="toto">
-            TOTO
+        <div class="dark">
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
         </div>
         
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
-        <p>&nbsp;</p>
+        <section class="container section-principale" id="contact">
+            <div class="row">
+                <header class="col-sm-12 section-header">
+                    <h2>CONTACT US</h2>
+                    <p class="sous-titre">Duis vitae velit mollis, congue nisi dignissim, pellentesque lorem</p>
+                </header>
+            </div>
+            <form id="contact-form" class="contact-form" method="post" action="contact.php">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <input type="text" name="name" placeholder="YOUR NAME">
+                    </div>
+                    <div class="col-sm-6">
+                        <input type="email" name="email" placeholder="YOUR EMAIL">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <input type="text" name="subject" placeholder="THE SUBJECT">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <textarea name="message" placeholder="THE MESSAGE"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <button type="submit">SEND THE MESSAGE</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <div class="dark">
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+        </div>
+        
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="js/jquery-2.1.3.js" type="text/javascript"></script>
-        <script>
-            
-        </script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/contact.js" type="text/javascript"></script>
     </body>
 </html>
